@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Barlow";
   font-style: normal;
@@ -199,9 +206,15 @@ ul,ol{
 }
 
 .collection__list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 65px;
   padding: 0;
 }
@@ -213,15 +226,16 @@ ul,ol{
 .collection__img{
   width: 256px;
   height: 193px;
-  object-fit: cover;
-  margin-left: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .collection__img--cover{
-  width: 178px;
-  height: 160px;
-  object-fit: cover;
-  margin-bottom: 25px;
+  width: 235px;
+  height: 177px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 18px;
 } 
 
 .collection__itembox{
@@ -292,8 +306,12 @@ ul,ol{
 }
 
 .select__list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   margin-top: 86px;
   padding: 0;
@@ -360,6 +378,8 @@ ul,ol{
 }
 
 .works__spanbox{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -380,8 +400,12 @@ ul,ol{
 }
 
 .works__list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   margin-top: 67px;
   padding: 0;
@@ -444,12 +468,18 @@ ul,ol{
 }
 
 .footer__box{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   vertical-align: middle;
 }
 
 .footer__list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   margin-left: 103px;
@@ -484,6 +514,8 @@ ul,ol{
 }
 
 .footer__social{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-top: 50px;
